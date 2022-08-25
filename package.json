@@ -7,7 +7,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "heroku-prebuild": "npm i -f",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@strapi/provider-upload-cloudinary": "^4.3.6",
